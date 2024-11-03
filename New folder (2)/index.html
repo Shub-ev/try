@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with CSS Switcher</title>
+    <!-- Default CSS -->
+    <link id="theme-style" rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <!-- Buttons to switch styles -->
+        <div class="style-switcher">
+            <button onclick="switchStyle('style1.css')">Style 1</button>
+            <button onclick="switchStyle('style2.css')">Style 2</button>
+            <button onclick="switchStyle('style3.css')">Style 3</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
